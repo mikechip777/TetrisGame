@@ -32,7 +32,7 @@ public class GameFrame extends View {
 
     private final Paint mPaint = new Paint();
 
-    private void init(int gameSize) {
+    public void init(int gameSize) {
         mGameSize = gameSize;
         getViewTreeObserver().addOnGlobalLayoutListener(() -> {
             mBoxSize = Math.min(getWidth(), getHeight()) / mGameSize;
